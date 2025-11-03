@@ -1,7 +1,7 @@
 // ========================================
 // src/pages/Products/Products.tsx
 // ========================================
-import '../styles/pages/Products.scss';
+import '../styles/Products.scss';
 
 const Products = () => {
   return (

@@ -1,10 +1,10 @@
 // ========================================
 // src/components/Layout/Layout.tsx
 // ========================================
-import { ReactNode } from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import './Layout.scss';
+import { type ReactNode } from 'react';
+import Header from '../styles/Header.scss';
+import Footer from '../styles/Footer.scss';
+import '../styles/Layout.scss';
 
 interface LayoutProps {
   children: ReactNode;

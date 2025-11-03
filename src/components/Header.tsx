@@ -3,7 +3,7 @@
 // ========================================
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './Header.scss';
+import '../styles/Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

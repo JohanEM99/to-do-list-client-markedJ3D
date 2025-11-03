@@ -1,19 +1,24 @@
-// Global styles
-html {
-  font-size: $font-size-base;
+@import './styles/_variables.scss';
+@import './styles/_mixins.scss';
+@import './styles/_reset.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: $font-family-base;
-  color: $dark-color;
-  line-height: $line-height-base;
+  font-family: $font-family;
+  color: $text-color;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
 .container {
-  max-width: $container-max-width;
+  max-width: $container-width;
   margin: 0 auto;
-  padding: 0 $container-padding;
+  padding: 0 20px;
 }
 
 .section {
@@ -34,66 +39,5 @@ body {
     height: 4px;
     background: $primary-color;
     margin: 20px auto 0;
-  }
-}
-
-
-// ========================================
-// src/styles/_variables.scss
-// ========================================
-// Colors
-$primary-color: #00d4ff;
-$primary-dark: #1a1a2e;
-$secondary-color: #16213e;
-$accent-color: #0f0c29;
-$text-color: #333;
-$text-light: #666;
-$white: #fff;
-$bg-light: #f8f9fa;
-
-// Typography
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$font-size-base: 16px;
-
-// Layout
-$container-width: 1200px;
-$header-height: 80px;
-
-// Transitions
-$transition-base: 0.3s ease;
-
-// Breakpoints
-$breakpoint-mobile: 768px;
-$breakpoint-tablet: 992px;
-
-
-// ========================================
-// src/styles/_mixins.scss
-// ========================================
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin gradient-bg {
-  background: linear-gradient(135deg, $accent-color, #302b63, #24243e);
-}
-
-@mixin card-shadow {
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  
-  &:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  }
-}
-
-@mixin transition($property: all) {
-  transition: $property $transition-base;
-}
-
-@mixin responsive($breakpoint) {
-  @media (max-width: $breakpoint) {
-    @content;
   }
 }

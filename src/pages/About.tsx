@@ -1,7 +1,7 @@
 // ========================================
 // src/pages/About/About.tsx
 // ========================================
-import '../styles/pages/About.scss';
+import '../styles/About.scss';
 
 const About = () => {
   return (

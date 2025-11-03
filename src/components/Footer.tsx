@@ -1,7 +1,7 @@
 // ========================================
 // src/components/Footer/Footer.tsx
 // ========================================
-import './Footer.scss';
+import '../styles/Footer.scss';
 
 const Footer = () => {
   return (

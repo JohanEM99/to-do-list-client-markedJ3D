@@ -1,14 +1,11 @@
-// ========================================
-// src/App.tsx
-// ========================================
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import CustomDesigns from './pages/CustomDesigns';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import './styles/main.scss';
+import './main.scss';
 
 function App() {
   return (

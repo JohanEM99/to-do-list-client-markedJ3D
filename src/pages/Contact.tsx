@@ -2,7 +2,7 @@
 // src/pages/Contact/Contact.tsx
 // ========================================
 import { useState, FormEvent } from 'react';
-import '../styles/pages/Contact.scss';
+import '../styles/Contact.scss';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

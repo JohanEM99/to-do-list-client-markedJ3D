@@ -1,7 +1,7 @@
 // ========================================
 // src/pages/Home/Home.tsx
 // ========================================
-import '../styles/pages/Home.scss';
+import '../styles/Home.scss';
 
 const Home = () => {
   const values = [

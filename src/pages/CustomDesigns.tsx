@@ -1,7 +1,7 @@
 // ========================================
 // src/pages/CustomDesigns/CustomDesigns.tsx
 // ========================================
-import '../styles/pages/CustomDesigns.scss';
+import '../styles/CustomDesigns.scss';
 
 const CustomDesigns = () => {
   return (
