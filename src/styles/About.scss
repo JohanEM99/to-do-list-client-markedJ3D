@@ -1,0 +1,36 @@
+// ========================================
+// src/pages/About/About.scss
+// ========================================
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  .about-hero {
+    @include gradient-bg;
+    color: $white;
+    padding: 150px 20px 100px;
+    text-align: center;
+    
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 22px;
+    }
+  }
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  
+  p {
+    margin-bottom: 25px;
+    color: $text-light;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+  }
+}

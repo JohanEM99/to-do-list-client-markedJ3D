@@ -1,0 +1,62 @@
+// ========================================
+// src/pages/CustomDesigns/CustomDesigns.scss
+// ========================================
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.custom-designs {
+  .custom-hero {
+    @include gradient-bg;
+    color: $white;
+    padding: 150px 20px 100px;
+    text-align: center;
+    
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 22px;
+    }
+  }
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  
+  @include responsive($breakpoint-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-box {
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: $primary-dark;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: $text-light;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+}
+
+.image-box {
+  @include flex-center;
+  
+  .image-placeholder {
+    font-size: 120px;
+    background: $bg-light;
+    width: 100%;
+    height: 400px;
+    @include flex-center;
+    border-radius: 15px;
+  }
+}

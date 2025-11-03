@@ -1,0 +1,15 @@
+// ========================================
+// src/components/Layout/Layout.scss
+// ========================================
+@import '../../styles/variables';
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: $header-height;
+}

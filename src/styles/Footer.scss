@@ -1,0 +1,53 @@
+// ========================================
+// src/components/Footer/Footer.scss
+// ========================================
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  background: $primary-dark;
+  color: $white;
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  h3, h4 {
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: rgba($white, 0.8);
+  }
+  
+  ul {
+    li {
+      margin-bottom: 10px;
+      
+      a {
+        color: rgba($white, 0.8);
+        @include transition(color);
+        
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba($white, 0.1);
+  color: rgba($white, 0.6);
+}
